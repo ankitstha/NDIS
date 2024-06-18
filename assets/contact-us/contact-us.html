@@ -22,7 +22,7 @@
             <i class="fas fa-phone-alt"></i>
             <div class="topic">Phone</div>
             <div class="text-one">03 5209 2422</div>
-            <div class="text-two">0421 358 509</div>
+            <div class="text-two">0494 092 027</div>
           </div>
           <div class="email details">
             <i class="fas fa-envelope"></i>
@@ -37,18 +37,26 @@
             We would love to hear from you. Please contact us if you have any questions at all. We are always happy to help.
           </p>
           <form action="https://api.web3forms.com/submit" method="POST">
-            <div class="input-box">
-              <input type="text" placeholder="Enter your name" />
+          <input type="hidden" name="access_key" value="a9661e20-8f5f-4d7e-96c5-9786b94930a5" />
+          <div class="form-group-container">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
             </div>
-            <div class="input-box">
-              <input type="text" placeholder="Enter your email" />
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
             </div>
-            <div class="input-box message-box">
-              <textarea placeholder="Enter your message"></textarea>
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone</label>
+              <input id="phone" name="phone" class="form-input" placeholder="+1 (234) 56789" type="text" />
             </div>
-            <div class="button">
-              <input type="button" value="Send Now" />
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
             </div>
+          </div>
+          <button class="form-submit" type="submit">Send Message</button>
           </form>
         </div>
       </div>
