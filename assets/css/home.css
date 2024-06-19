@@ -482,14 +482,30 @@ body.nav-active { overflow: hidden; }
   #SERVICE
 \*-----------------------------------*/
 
-.service { text-align: center; }
+.service {
+  text-align: center;
+}
 
-.service .section-title { margin-block-end: 50px; }
+.service .section-title {
+  margin-block-end: 50px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
 
 .service-card {
   padding: 40px;
   box-shadow: var(--shadow-2);
   border-radius: var(--radius-6);
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .service-card .card-icon {
@@ -504,9 +520,13 @@ body.nav-active { overflow: hidden; }
   margin-inline: auto;
 }
 
-.service-card .card-icon ion-icon { --ionicon-stroke-width: 50px; }
+.service-card .card-icon ion-icon {
+  --ionicon-stroke-width: 50px;
+}
 
-.service-card .card-title { margin-block: 16px 10px; }
+.service-card .card-title {
+  margin-block: 16px 10px;
+}
 
 .service-card .btn-text {
   display: flex;
@@ -519,7 +539,9 @@ body.nav-active { overflow: hidden; }
   transition: var(--transition-1);
 }
 
-.service-card .btn-text:is(:hover, :focus-visible) { opacity: 0.9; }
+.service-card .btn-text:is(:hover, :focus-visible) {
+  opacity: 0.9;
+}
 
 
 
